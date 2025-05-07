@@ -8,47 +8,68 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Quartz 4",
+    pageTitle: "Laura",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
       provider: "plausible",
     },
-    locale: "en-US",
-    baseUrl: "quartz.jzhao.xyz",
-    ignorePatterns: ["private", "templates", ".obsidian"],
+    locale: "ru-RU",
+    baseUrl: "laura.moscow",
+    ignorePatterns: ["private", "templates", "Drafts",".obsidian", "Шаблоны", "Черновики"],
     defaultDateType: "modified",
     theme: {
-      fontOrigin: "googleFonts",
+      fontOrigin: "local",
       cdnCaching: true,
       typography: {
-        header: "Schibsted Grotesk",
-        body: "Source Sans Pro",
-        code: "IBM Plex Mono",
+        title: {
+          name: "KJV1611",       // Must match @font-face name
+          fallback: "mono",
+          fontOrigin: "local",    // Load from /static/fonts/
+          fontDisplay: "swap",    // Optional but recommended
+        },
+        header: {
+          name: "EB Garamond",       // Must match @font-face name
+          fallback: "mono",
+          fontOrigin: "local",    // Load from /static/fonts/
+          fontDisplay: "swap",    // Optional but recommended
+        },
+        body: {
+          name: "EB Garamond",       // Must match @font-face name
+          fallback: "mono",
+          fontOrigin: "local",    // Load from /static/fonts/
+          fontDisplay: "swap",    // Optional but recommended
+        },
+        code: {
+          name: "Courier Prime",       // Must match @font-face name
+          fallback: "mono",
+          fontOrigin: "local",    // Load from /static/fonts/
+          fontDisplay: "swap",    // Optional but recommended
+        },
       },
       colors: {
         lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#fff23688",
+          light: "rgb(248, 243, 242)",
+          lightgray: "#A0CDB8",
+          gray: "#A0CDB8",
+          darkgray: "rgb(89, 79, 103)",
+          dark: "rgb(89, 79, 103)",
+          secondary: "rgb(89, 79, 103)",
+          tertiary: "#6a73b0",
+          highlight: "rgba(29, 163, 98, 0.15)",
+          textHighlight: "#A0CDB8",
         },
         darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
-          gray: "#646464",
-          darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#b3aa0288",
+          light: "#000000",
+          lightgray: "rgba(0, 255, 170, 0.15)",
+          gray: "#bfb2bb",
+          darkgray: "#ffffff",
+          dark: "#ffffff",
+          secondary: "#ffffff",
+          tertiary: "rgb(160, 219, 192)",
+          highlight: "rgba(0, 255, 170, 0.15)",
+          textHighlight: "#000000",
         },
       },
     },
@@ -66,7 +87,7 @@ const config: QuartzConfig = {
         },
         keepBackground: false,
       }),
-      Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: false }),
+      Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: false , mermaid: true, callouts: true, parseTags:true, comments:true, highlight:true,}),
       Plugin.GitHubFlavoredMarkdown(),
       Plugin.TableOfContents(),
       Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),

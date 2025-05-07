@@ -14,11 +14,100 @@ const PageTitle: QuartzComponent = ({ fileData, cfg, displayClass }: QuartzCompo
 }
 
 PageTitle.css = `
-.page-title {
-  font-size: 1.75rem;
-  margin: 0;
-  font-family: var(--titleFont);
+.epistemic-note {
+    font-size: 0.8em;
+    color: var(--gray);
+    padding-top: 0.5rem;
+    border-top: 1px dashed var(--lightgray);
 }
+
+@font-face {
+    font-family: 'TT2020 Style E';
+    src: url('/static/fonts/TT2020StyleE-Regular.woff2') format('woff2'),
+         url('/static/fonts/TT2020StyleE-Regular.woff') format('woff'),
+         url('/static/fonts/TT2020StyleE-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'TT2020 Style E';
+    src: url('/static/fonts/TT2020StyleE-Regular.woff2') format('woff2'),
+         url('/static/fonts/TT2020StyleE-Regular.woff') format('woff'),
+         url('/static/fonts/TT2020StyleE-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'KJV1611';
+    src: url('/static/fonts/KJV1611.woff2') format('woff2'),
+         url('/static/fonts/KJV1611.woff') format('woff'),
+         url('/static/fonts/KJV1611.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'KJV1611';
+    src: url('/static/fonts/KJV1611.woff2') format('woff2'),
+         url('/static/fonts/KJV1611.woff') format('woff'),
+         url('/static/fonts/KJV1611.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    
+    font-weight: 400;
+}
+
+
+@font-face {
+    font-family: 'Coelacanth';
+    src: url('/static/fonts/Coelacanth.woff2') format('woff2'),
+         url('/static/fonts/Coelacanth.woff') format('woff'),
+         url('/static/fonts/Coelacanth.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Coelacanth';
+    src: url('/static/fonts/Coelacanth.woff2') format('woff2'),
+         url('/static/fonts/Coelacanth.woff') format('woff'),
+         url('/static/fonts/Coelacanth.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'LaBelleAurore';
+    src: url('/fonts/LaBelleAurore-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'UnifrakturCook';
+    src: url('/fonts/UnifrakturCook-Bold.ttf');
+}
+
+.page-title {
+  font-size: 4.35rem;
+  
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  font-family: 'KJV1611' !important;
+}
+  
 `
 
 export default (() => PageTitle) satisfies QuartzComponentConstructor
