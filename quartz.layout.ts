@@ -34,7 +34,10 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.ReaderMode() },
       ],
     }),
-    Component.DesktopOnly(Component.RecentNotes()),
+    Component.DesktopOnly(Component.ConditionalRender({
+      component: Component.RecentNotes(),
+      condition: (page) => page.fileData.slug == "index",
+    })), 
     Component.Explorer(),
     
   ],
