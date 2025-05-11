@@ -26,7 +26,6 @@ PageTitle.css = `
     src: url('/static/fonts/TT2020StyleE-Regular.woff2') format('woff2'),
          url('/static/fonts/TT2020StyleE-Regular.woff') format('woff'),
          url('/static/fonts/TT2020StyleE-Regular.ttf') format('truetype');
-    font-weight: normal;
     font-style: normal;
     font-display: swap;
     font-weight: 400;
@@ -36,7 +35,6 @@ PageTitle.css = `
     src: url('/static/fonts/TT2020StyleE-Regular.woff2') format('woff2'),
          url('/static/fonts/TT2020StyleE-Regular.woff') format('woff'),
          url('/static/fonts/TT2020StyleE-Regular.ttf') format('truetype');
-    font-weight: normal;
     font-style: normal;
     font-display: swap;
     font-weight: 700;
@@ -44,25 +42,19 @@ PageTitle.css = `
 @font-face {
     font-family: 'KJV1611';
     src: url('/static/fonts/KJV1611.woff2') format('woff2'),
-         url('/static/fonts/KJV1611.woff') format('woff'),
-         url('/static/fonts/KJV1611.ttf') format('truetype');
-    font-weight: normal;
+         url('/static/fonts/KJV1611.woff') format('woff');
+    font-weight: 400; /* Normal */
     font-style: normal;
     font-display: swap;
-    
-    font-weight: 700;
 }
 
 @font-face {
     font-family: 'KJV1611';
-    src: url('/static/fonts/KJV1611.woff2') format('woff2'),
-         url('/static/fonts/KJV1611.woff') format('woff'),
-         url('/static/fonts/KJV1611.ttf') format('truetype');
-    font-weight: normal;
+    src: url('/static/fonts/KJV1611.woff2') format('woff2'), /* Separate bold file */
+         url('/static/fonts/KJV1611.woff') format('woff');
+    font-weight: 700; /* Bold */
     font-style: normal;
     font-display: swap;
-    
-    font-weight: 400;
 }
 
 
@@ -71,7 +63,6 @@ PageTitle.css = `
     src: url('/static/fonts/Coelacanth.woff2') format('woff2'),
          url('/static/fonts/Coelacanth.woff') format('woff'),
          url('/static/fonts/Coelacanth.ttf') format('truetype');
-    font-weight: normal;
     font-style: normal;
     font-display: swap;
     font-weight: 400;
@@ -82,20 +73,9 @@ PageTitle.css = `
     src: url('/static/fonts/Coelacanth.woff2') format('woff2'),
          url('/static/fonts/Coelacanth.woff') format('woff'),
          url('/static/fonts/Coelacanth.ttf') format('truetype');
-    font-weight: normal;
     font-style: normal;
     font-display: swap;
     font-weight: 700;
-}
-
-@font-face {
-    font-family: 'LaBelleAurore';
-    src: url('/fonts/LaBelleAurore-Regular.ttf');
-}
-
-@font-face {
-    font-family: 'UnifrakturCook';
-    src: url('/fonts/UnifrakturCook-Bold.ttf');
 }
 
 .page-title {
