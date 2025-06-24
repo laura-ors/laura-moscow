@@ -252,7 +252,21 @@ border: solid rgb(106, 115, 176) 1px;
     /* Sharp corners (remove if you prefer rounded) */
     border-radius: 0;
 }
-
+.desktop-explorer {
+    overflow: visible !important;
+  }
+  
+  .explorer-toggle {
+    pointer-events: auto !important;
+  }
+.desktop-explorer {
+    z-index: 100;
+  }
+  
+  .explorer-toggle {
+    z-index: 101; /* Higher than the explorer */
+    position: relative; /* Needed for z-index to work */
+  }
 
 svg.external-icon {
   display: none;
@@ -305,6 +319,8 @@ svg.external-icon {
 }
 [saved-theme="light"] h3:nth-child(8n+8) { background: var(--color-yellow); 
 }
+
+
 
 
 [saved-theme="light"] h2:not(.page-title) { 
