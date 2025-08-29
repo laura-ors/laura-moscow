@@ -5,8 +5,11 @@ import * as Component from "./quartz/components"
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
-  afterBody: [],
-  footer: Component.TagList(),
+  afterBody: [Component.ConditionalRender({
+      component: Component.RecentNotes(),
+      condition: (page) => page.fileData.slug == "index",
+    }),],
+      footer: Component.TagList(),
 }
 
 // components for pages that display a single page (e.g. a single note)
@@ -34,10 +37,7 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.ReaderMode() },
       ],
     }),
-    Component.DesktopOnly(Component.ConditionalRender({
-      component: Component.RecentNotes(),
-      condition: (page) => page.fileData.slug == "index",
-    })), 
+     
     Component.Explorer(),
     
   ],

@@ -39,11 +39,21 @@ PageTitle.css = `
     font-display: swap;
     font-weight: 700;
 }
+
 @font-face {
-    font-family: 'KJV1611';
-    src: url('/static/fonts/KJV1611.woff2') format('woff2'),
-         url('/static/fonts/KJV1611.woff') format('woff'),
-         url('/static/fonts/KJV1611.ttf') format('truetype');
+    font-family: 'Old-Soviet';
+    src: url('/static/fonts/Old-Soviet.woff2') format('woff2'),
+         url('/static/fonts/Old-Soviet.woff') format('woff'),
+         url('/static/fonts/Old-Soviet.ttf') format('truetype');
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Old-Soviet';
+    src: url('/static/fonts/Old-Soviet.woff2') format('woff2'),
+         url('/static/fonts/Old-Soviet.woff') format('woff'),
+         url('/static/fonts/Old-Soviet.ttf') format('truetype');
     font-style: normal;
     font-display: swap;
     font-weight: 700;
@@ -52,11 +62,19 @@ PageTitle.css = `
 @font-face {
     font-family: 'KJV1611';
     src: url('/static/fonts/KJV1611.woff2') format('woff2'),
-         url('/static/fonts/KJV1611.woff') format('woff'),
-         url('/static/fonts/KJV1611.ttf') format('truetype');
+         url('/static/fonts/KJV1611.woff') format('woff');
+    font-weight: 400; /* Normal */
     font-style: normal;
     font-display: swap;
-    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'KJV1611';
+    src: url('/static/fonts/KJV1611.woff2') format('woff2'), /* Separate bold file */
+         url('/static/fonts/KJV1611.woff') format('woff');
+    font-weight: 700; /* Bold */
+    font-style: normal;
+    font-display: swap;
 }
 
 
@@ -81,12 +99,14 @@ PageTitle.css = `
 }
 
 .page-title {
-  font-size: 4.35rem;
+  font-size: 4.35rem !important;
+  
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
   font-family: 'KJV1611' !important;
+  margin-block-end: 0 !important;
 }
   
 `
