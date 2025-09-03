@@ -686,6 +686,7 @@ table {
   color: var(--dark);
   font-weight: revert;
   margin-bottom: 0;
+          text-align: center;
 
   article > & > a[role="anchor"] {
     color: var(--dark);
@@ -701,6 +702,8 @@ table {
 [saved-theme="light"] h6,
 [saved-theme="light"] thead {
   font-family: 'Old-Soviet';
+          text-align: center;
+
 }
 
 
