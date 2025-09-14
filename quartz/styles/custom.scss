@@ -20,8 +20,8 @@ section {
   margin: 0;
   box-sizing: border-box;
   background-color: var(--light);
-  font-family: 'Old-Soviet';
-  font-size: 12pt;
+  font-family: 'Coelacanth';
+  font-size: 17pt;
   color: var(--darkgray);
 }
 
@@ -30,9 +30,9 @@ section {
   margin: 0;
   box-sizing: border-box;
   background-color: var(--light);
-  font-family: 'Old-Soviet';
+  font-family: 'Coelacanth';
   // color: black;
-  font-size: 12pt;
+  font-size: 17pt;
 
 }
 
@@ -285,7 +285,7 @@ svg.external-icon {
 
 
 [saved-theme="dark"] .folder-container div>a {
-  font-family: 'Old-Soviet' !important;
+    font-family: 'Coelacanth' !important;
 }
 
 [saved-theme="dark"] a {
@@ -682,7 +682,7 @@ table {
 [saved-theme="dark"] h5,
 [saved-theme="dark"] h6,
 [saved-theme="dark"] thead {
-  font-family: 'Old-Soviet';
+  font-family: 'Coelacanth';
   color: var(--dark);
   font-weight: revert;
   margin-bottom: 0;
@@ -701,7 +701,7 @@ table {
 [saved-theme="light"] h5,
 [saved-theme="light"] h6,
 [saved-theme="light"] thead {
-  font-family: 'Old-Soviet';
+  font-family: 'Coelacanth';
           text-align: center;
 
 }
@@ -719,7 +719,7 @@ h3 {
     font-size: 1.55rem !important;
 }
 h3 .internal {
-    font-size: 1.25rem !important;
+    // font-size: 1.25rem !important;
 }
 h4 {
     font-size: 1.45rem !important;
@@ -745,7 +745,7 @@ h6 {
     opacity: 0;
     transition: opacity 0.2s ease;
     transform: translateY(-0.1rem);
-  font-family: 'Old-Soviet';
+  font-family: 'Coelacanth';
     user-select: none;
   }
 
@@ -808,7 +808,7 @@ h6 {
 }
 
 [saved-theme="light"] button {
-  font-family: 'Old-Soviet';
+  font-family: 'Coelacanth';
 }
 
 [saved-theme="light"] button.toc-header h3 {
@@ -858,14 +858,14 @@ button.toc-header h3 {
 }
 
 [saved-theme="dark"] button.mobile-explorer, [saved-theme="dark"] button.desktop-explorer>h2 {
-  font-size: 15pt;
+  // font-size: 15pt;
   border: 0px solid cadetblue; /* Bright neon color (cyan) */
 }
 
 
 [saved-theme="light"] button.mobile-explorer, [saved-theme="light"] button.desktop-explorer>h2 {
   // padding: 0.125em 0.25em;
-  font-size: 15pt;
+  // font-size: 15pt;
   // border: 0px solid cadetblue; /* Bright neon color (cyan) */
 }
 
@@ -999,7 +999,7 @@ figure[data-rehype-pretty-code-figure] {
   position: relative;
 
   & > [data-rehype-pretty-code-title] {
-  font-family: 'Old-Soviet';
+  font-family: 'Coelacanth';
     font-size: 0.9rem;
     padding: 0.1rem 0.5rem;
     border: 1px solid var(--lightgray);
