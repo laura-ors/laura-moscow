@@ -12,9 +12,7 @@ const config: QuartzConfig = {
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
-    analytics: {
-      provider: "plausible",
-    },
+    analytics: { provider: 'google', tagId: 'G-4B571V91Q2' },
     locale: "ru-RU",
     baseUrl: "laura.moscow",
     ignorePatterns: ["private", "templates", "Drafts",".obsidian", "Шаблоны", "Черновики"],
