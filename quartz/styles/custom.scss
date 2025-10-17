@@ -758,6 +758,15 @@ h6 {
   }
 }
 
+[saved-theme="dark"] .page article p>strong {
+    color: white;
+}
+
+[saved-theme="light"] .page article p>strong {
+    color: black;
+}
+
+
 [saved-theme="dark"] h1.article-title {
     text-align: center;
     text-shadow: 0 0 5px #630F47, 0 0 10px #630F47,
