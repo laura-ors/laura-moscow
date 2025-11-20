@@ -340,14 +340,14 @@ svg.external-icon {
 
 [saved-theme="light"] .search>.search-button {
 box-shadow: 
-            0 0 0px #54160e, /* Inner glow */
-            0 0 10px #54160e60, /* Outer glow */
-            0 0 10px #54160e60; /* Blurred spread */
+            0 0 0px #424929, /* Inner glow */
+            0 0 10px #42492960, /* Outer glow */
+            0 0 10px #42492960; /* Blurred spread */
           
           /* Optional: Text glow */
-          text-shadow: 0 0 6px #54160e60;
+          text-shadow: 0 0 6px #42492960;
             // text-shadow: 0 0 5px #e0be55,0 0 10px #e0be55,0 0 20px #e0be55,0 0 40px #e0be55,0 0 45px #e0be55;
-            border: 1px solid #54160e60; /* Bright neon color (cyan) */
+            border: 1px solid #42492960; /* Bright neon color (cyan) */
 
 }
 
@@ -393,14 +393,14 @@ box-shadow:
         display: inline-block;
         padding: 0.125em 0.25em;
           box-shadow: 
-            0 0 0px #54160e, /* Inner glow */
-            0 0 10px #54160e60, /* Outer glow */
-            0 0 10px #54160e60; /* Blurred spread */
+            0 0 0px #D3d0bf, /* Inner glow */
+            0 0 10px #D3d0bf, /* Outer glow */
+            0 0 10px #D3d0bf; /* Blurred spread */
           
           /* Optional: Text glow */
-          text-shadow: 0 0 6px #54160e60;
+          text-shadow: 0 0 6px #D3d0bf;
             // text-shadow: 0 0 5px #e0be55,0 0 10px #e0be55,0 0 20px #e0be55,0 0 40px #e0be55,0 0 45px #e0be55;
-            border: 1px solid #54160e60; /* Bright neon color (cyan) */
+            border: 1px solid #D3d0bf; /* Bright neon color (cyan) */
 
           /* Sharp corners (remove if you prefer rounded) */
           border-radius: 0;
@@ -796,16 +796,20 @@ h6 {
 [saved-theme="light"] h2.page-title {
   // text-align: center;
   margin-block-start: 0;
-  color: #c9b4b1!important;
-    text-shadow: 0 0 5px #54160e, 0 0 10px #54160e,
-    0 0 20px #54160e, 0 0 40px #54160e, 0 0 45px #54160e;
-  // margin-bottom: 0;
+  // color: #c9b4b1!important;
+  //   text-shadow: 0 0 5px #e0be55, 0 0 10px #e0be55,
+  //   0 0 20px #e0be55, 0 0 40px #e0be55, 0 0 45px #e0be55;
+  // // margin-bottom: 0;
 
+}
+
+.graph>.graph-outer {
+    border-radius: 0px !important;
 }
 
  [saved-theme="light"]  .page-title a {
      /* styles for inside */
-     color: #c9b4b1 !important
+     color: #54160e !important
    }
 
 
@@ -877,7 +881,9 @@ button.toc-header h3 {
   // font-size: 15pt;
   // border: 0px solid cadetblue; /* Bright neon color (cyan) */
 }
-
+[saved-theme=light] .search>.search-button {
+    background-color: #d3d0bf;
+}
 /* Mobile view adjustments */
 @media (max-width: 768px) {
   .left-sidebar {
@@ -897,6 +903,43 @@ button.toc-header h3 {
 
   }
 
+}
+
+[saved-theme="light"] h2:not(.page-title) {
+    // text-align: center;
+    color:#414929;
+        // border: 1px solid #414929;
+        
+// background-image: linear-gradient(-100deg, #c7ceea66, #c7e0ea66, #B5EAD766, #D4F1C766, #FFECB866, #FFD1DC66, #E2D1F966);
+// border-radius: 0.25em;
+// padding: 0em 0.25em;
+
+}
+
+[saved-theme="light"] h3 {
+    // text-align: center;
+    color:#414929;
+        // border: 1px solid #414929;
+// background-image: linear-gradient(-100deg, #c7ceea66, #c7e0ea66, #B5EAD766, #D4F1C766, #FFECB866, #FFD1DC66, #E2D1F966);
+// border-radius: 0.25em;
+// padding: 0em 0.25em;
+}
+
+[saved-theme="light"] h1 {
+    // text-align: center;
+    color:#414929;
+    // border: 1px solid #414929;
+    // background-image: linear-gradient(-100deg, #e0be5566, #a9e4e166, #419b7266, #002f5366, #6a73b066, #672d8166, #54160e66);
+// border-radius: 0.25em;
+// padding: 0em 0.25em;
+//   margin-top: 1.9rem;
+//     text-shadow: 0 0 5px #54160e, 0 0 10px #54160e,
+//     0 0 20px #54160e, 0 0 40px #54160e, 0 0 45px #54160e;
+//     // background: linear-gradient(to right,rgba(0,0,0,0) 0%,  #54160e  50%, rgba(0,0,0,0) 100%);
+// background-position: 0 100%;
+// background-size: 100% 1px;
+// background-repeat: repeat-x;
+// text-align: center;
 }
 [saved-theme="dark"] h2:not(.page-title) {
     // text-align: center;
@@ -1227,8 +1270,8 @@ iframe.pdf {
 [saved-theme="light"] .readermode svg {
     width: 20px;
     height: 20px;
-    fill: #54160e;
-    stroke: #54160e;
+    fill: #414929;
+    stroke: #414929;
     transition: opacity .1s;
     position: absolute;
     top: calc(50% - 10px);
@@ -1237,8 +1280,8 @@ iframe.pdf {
 [saved-theme="light"] .darkmode svg {
     width: 20px;
     height: 20px;
-    fill: #54160e;
-    stroke: #54160e;
+    fill: #414929;
+    stroke: #414929;
     transition: opacity .1s;
     position: absolute;
     top: calc(50% - 10px);

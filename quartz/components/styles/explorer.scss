@@ -174,7 +174,7 @@ button.desktop-explorer {
   & div > button {
     color: var(--dark);
     background-color: transparent;
-    border: none;
+    border: none !important;
     text-align: left;
     cursor: pointer;
     padding-left: 0;
