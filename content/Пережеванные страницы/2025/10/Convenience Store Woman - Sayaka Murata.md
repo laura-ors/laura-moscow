@@ -26,7 +26,7 @@ draft: false
 ---
 
 
-| ![[Рецензии/2025/10/Обложки книг/Convenience Store Woman - Sayaka Murata-1.png\|250]] | ![[Convenience Store Woman - Sayaka Murata-3.png\|250]] |
+| ![[Convenience Store Woman - Sayaka Murata-1.png\|250]] | ![[Convenience Store Woman - Sayaka Murata-3.png\|250]] |
 | ------------------------------------------------------------------------------------- | ------------------------------------------------------- |
 | английская обложка                                                                    | русская обложка                                         |
 
