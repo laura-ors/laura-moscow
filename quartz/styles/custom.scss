@@ -824,9 +824,11 @@ h6 {
   font-family: 'Coelacanth';
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1919px) {
   .graph { display: none !important; }
 }
+
+th {text-align: center !important;}
 
 [saved-theme="light"] button.toc-header h3 {
   // background-color: rgba(0,0,0,00) !important;
