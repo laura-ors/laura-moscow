@@ -916,8 +916,11 @@ button.toc-header h3 {
 
 }
 
+td {
+      vertical-align: top !important;
+}
+
 [saved-theme="light"] h3 {
-    // text-align: center;
     color:#414929;
         // border: 1px solid #414929;
 // background-image: linear-gradient(-100deg, #c7ceea66, #c7e0ea66, #B5EAD766, #D4F1C766, #FFECB866, #FFD1DC66, #E2D1F966);
