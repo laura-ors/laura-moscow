@@ -824,6 +824,10 @@ h6 {
   font-family: 'Coelacanth';
 }
 
+@media (max-width: 1023px) {
+  .graph { display: none !important; }
+}
+
 [saved-theme="light"] button.toc-header h3 {
   // background-color: rgba(0,0,0,00) !important;
   font-size: 1.25rem !important;
@@ -1153,6 +1157,7 @@ p {
     th,
     td {
       min-width: 75px;
+      vertical-align: top !important;
     }
 
     & > * {
@@ -1169,6 +1174,8 @@ th {
 
 td {
   padding: 0.2rem 0.7rem;
+        vertical-align: top !important;
+
 }
 
 tr {
