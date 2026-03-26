@@ -1053,6 +1053,22 @@ h6 {
   margin-bottom: 1rem;
 }
 
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+@media (max-width: 800px) {
+  .right, .page-header__right {
+    margin-left: 0;
+    padding-left: 0;
+    width: auto;
+  }
+}
+// * {
+//   outline: 1px solid red;
+// }
+
 figure[data-rehype-pretty-code-figure] {
   margin: 0;
   position: relative;
