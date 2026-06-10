@@ -86,7 +86,7 @@ const config: QuartzConfig = {
         },
         keepBackground: false,
       }),
-      Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: false , mermaid: true, callouts: true, parseTags:true, comments:true, highlight:true,}),
+      Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: true , mermaid: true, callouts: true, parseTags:true, comments:true, highlight:true,}),
       Plugin.GitHubFlavoredMarkdown(),
       Plugin.TableOfContents(),
       Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
