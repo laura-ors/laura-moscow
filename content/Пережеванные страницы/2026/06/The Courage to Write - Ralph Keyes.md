@@ -2,6 +2,9 @@
 title: The Courage to Write - Ralph Keyes
 draft: false
 tags:
+  - книга
+  - 8/10
+  - отлично
 updated: 2026-06-22 13:02
 автор:
 ---
